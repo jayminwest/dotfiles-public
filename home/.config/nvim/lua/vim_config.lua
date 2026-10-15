@@ -10,3 +10,4 @@ o.smartcase = true             -- case-sensitive only when typing a capital
 o.clipboard = 'unnamedplus'    -- share the system clipboard
 o.scrolloff = 16               -- keep cursor away from the screen edge
 o.undofile = true              -- persistent undo across sessions
+o.autowrite = true             -- save on :make, :next, buffer switch, etc.
