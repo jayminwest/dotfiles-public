@@ -23,3 +23,6 @@ key = "prefix+t"
 type = "plugin_action"
 command = "yazi-sidebar.toggle"
 description = "toggle yazi file sidebar"
+
+[ui.toast]
+delivery = "herdr"
