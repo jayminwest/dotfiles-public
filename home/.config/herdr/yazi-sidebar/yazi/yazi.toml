@@ -1,0 +1,12 @@
+# Sidebar-only yazi config (bin/sidebar points YAZI_CONFIG_HOME here);
+# standalone yazi keeps its own config.
+
+[mgr]
+ratio = [0, 1, 0]  # one column: the current directory only
+
+# Files open in an nvim split beside the sidebar; directories still enter.
+[opener]
+split = [{ run = '"$HERDR_PLUGIN_ROOT/bin/open-split" %s1', desc = "nvim split", orphan = true }]
+
+[open]
+prepend_rules = [{ url = "*", use = ["split", "open", "reveal"] }]
